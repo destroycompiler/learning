@@ -51,6 +51,16 @@
 - MDN
 - Mozilla hacks
 - javascript.info
+- w3shools
+- codepen.io (play with web)
+- freecodecamp (universal)
+    - youtube channels
+	- master css
+	1. kevin powell
+	2. DesignCourse
+	- Fireship
+	- javascriptmastery
+	- WebDevSimplified
 
 ### misc
 freecodecamp.org
