@@ -87,17 +87,49 @@ bd.addEventListener('keypress', (f) => {
 });
 
 
-// random beats
+function animateKey(key) {
+    key.classList.add('pressed');
 
-let rand = document.querySelector('.music-button');
+    setTimeout(() => {
+        key.classList.remove('pressed');
+    }, 100);
+}
 
-rand.addEventListener('click', (event) => {
+function randomBeat() {
 
-    // generate random 0 to 7 value
-    let rnum = Math.floor((Math.random()*100));
-    rnum = rnum % 8;
+    for (let i = 0; i < 32; i++) {
+        setTimeout(function() {
+            let index = generateNumber(8);
+            animateKey(btn[index]);
 
-    // console.log(arr[rnum]);
+        }, 1500);
+    }
     
 
-});
+}
+
+// generate num random numbers [0 to num-1]
+
+function generateNumber(num) {
+    let n = Math.floor(Math.random()*1000);
+    n = n%num;
+    return n;
+}
+
+function playRandomBeat() {
+    
+    let aud = new Audio('./audio/loop-1.mp3');
+    aud.play();
+    
+    
+}
+
+
+// execute the random function on click event
+
+let random = document.querySelector('.music-button');
+
+random.addEventListener('click', (e) => {
+    playRandomBeat();
+    randomBeat();
+})

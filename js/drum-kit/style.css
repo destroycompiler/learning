@@ -91,7 +91,7 @@ span.instrument {
 }
 
 .music-button:hover {
-    background-color: rgba(105, 31, 31, 0.4);
+    background-color: rgba(36, 29, 233, 0.4);
     /* color */
     color: yellow;
     animation: 0.3s;

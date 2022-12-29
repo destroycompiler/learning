@@ -897,3 +897,27 @@ Keep in mind that the JavaScript **does not** alter your HTML, but the DOM - you
 
 - they are just functions passed into other functions as arguments.
 - 
+
+
+
+
+### data-attribute
+ - data-*  can be used in html page as a custom attribute.
+
+```js
+
+window.addEventListener('keydown', function(e) {
+const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
+audio.currentTime = 0; // this rewinds the clip, so multiple hitting works.
+	// in case when pressed a different key, audio = null
+	// thus we add a condition
+	
+	if(!audio) {
+		return;
+	}
+	
+	audio.play();
+});
+
+```

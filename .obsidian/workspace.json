@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "search.md",
-                "mode": "preview",
+                "file": "js/js.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "search.md",
+                "file": "js/js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "search.md",
+                "file": "js/js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "search.md"
+                "file": "js/js.md"
               }
             }
           }
@@ -138,8 +138,8 @@
   },
   "active": "a6180d8cd37da148",
   "lastOpenFiles": [
-    "sites.md",
     "search.md",
+    "sites.md",
     "README.md",
     "open-source.md",
     "java.md",
